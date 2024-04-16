@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right top, #02777b, #047070, #024d63, #03485c, #003242, #023b44, #00252e);
+}
+
+.container{
+   border-radius: 20px;
+   max-width: 1000px;
+   height: 700px;
+   display: flex;
+   padding: 25px;
+   background-color: white;
+   overflow: hidden;   
+} 
+
+.Left {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.Left img{
+    max-width: 100%;
+    height:auto;
+}
+.overlay-text{
+    position: absolute;
+    top: 25%;
+    margin-left: 25%;
+    color: white;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.Right{
+    display: flex;
+    padding-left: 80px;
+    padding-right: 50px;
+    flex-direction: column;
+    justify-content: center, space-between;
+    width: 90%;
+    border-radius: 20px;
+    border-color:black;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 0%;
+}
+.heading{
+    display: flex; 
+    justify-content: center;
+}
+
+#input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#box-one{
+    border: none;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 7px;
+    background-color: rgb(227, 243, 247);
+    color: grey;
+}
+#box-two{
+    border: none;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 7px;
+    background-color: rgb(227, 243, 247);
+    color: grey;
+}
+
+#formalities{
+    display:inline-flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    color: grey;
+}
+
+#mycheckBox{ 
+   width: 14px;
+   height: 12px;
+   border-radius: 3px;
+   border: none; 
+}
+#forget{
+    text-decoration:none;
+    color: grey;
+}
+#forget:active{
+    color: #3378cc;
+}
+
+
+#Submit-btn{
+    display: flex;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(210, 15%, 5%);
+    cursor: pointer;
+    margin: 5px;
+}
+#Submit-btnG{
+    display: flex;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+#Submit-btnA{
+    display: flex;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(210, 15%, 5%);
+    cursor: pointer;
+    margin: 3px;
+}
+
+
+#Submit-btn:hover{
+    background-color: hsla(216, 5%, 18%, 0.836);
+}
+#Submit-btn:active{
+    background-color: hsla(216, 5%, 18%, 0.836);
+}
+#Submit-btnG:hover{
+    background-color: hsl(0, 0%, 78%);
+}
+#Submit-btnG:active{
+    background-color: hsla(216, 5%, 18%, 0.836);
+}
+#Submit-btnA:hover{
+    background-color: hsla(216, 5%, 18%, 0.836);
+}
+#Submit-btnA:active{
+    background-color: hsla(216, 5%, 18%, 0.836);
+}
+
+#new-user{
+    color: grey;
+}
+#links{
+    color: #3378cc;
+    text-decoration: none;
+}
+
+@media (max-width: 800px ) {
+    .container{
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .Left{
+        width: 100%;
+        
+    }
+    .Right{
+        width: 62%;
+        height: 140%;
+        
+    }
+    .Right{
+        display: flex;
+        padding-left: 15px;
+        flex-direction: column;
+        width: 90%;
+        border-radius: 20px;
+        border-color: black;
+        overflow: hidden;
+        background-color: white;
+    }
+}
